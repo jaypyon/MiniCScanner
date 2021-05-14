@@ -1,4 +1,4 @@
-﻿// MiniCScanner.c : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+// MiniCScanner.c : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
 #include <stdio.h>
@@ -68,9 +68,9 @@ int main(int argc, char *argv[])
 		}
 		*/
 		
-		writeToken(token, outputFile);
+		writeToken(token, outputFile,fileName);
 
-	} while (token.number != teof);
+	} while (token.token_number != teof);
 	
 	/*
 	printf(" === start of Parser\n");
